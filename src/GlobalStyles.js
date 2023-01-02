@@ -5,7 +5,6 @@ export default createGlobalStyle`
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
         font-weight: 400;
-
         font-synthesis: none;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -19,5 +18,15 @@ export default createGlobalStyle`
         outline: none;
         border: none;
         box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    body, #root {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        place-items: center;
+        background: #f1f1f1;
     }
 `;
