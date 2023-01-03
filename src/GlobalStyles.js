@@ -4,7 +4,7 @@ export default createGlobalStyle`
     :root {
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         font-synthesis: none;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -27,6 +27,6 @@ export default createGlobalStyle`
         min-width: 100vw;
         display: flex;
         place-items: center;
-        background: #f1f1f1;
+        background: #eee;
     }
 `;
