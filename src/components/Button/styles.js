@@ -19,6 +19,7 @@ export const ButtonStyled = styled.button`
     justify-content: center;
     align-items: center;
     gap: 5px;
+    width: 100%;
 
     &::before,
     &::after {

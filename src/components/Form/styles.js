@@ -3,13 +3,22 @@ import styled from 'styled-components';
 export const FormStyled = styled.form`
     box-shadow: 0 0 12px #11111122;
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px 0;
+    width: 100%;
+    max-width: 600px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
     position: relative;
+    gap: 50px;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: none;
+    }
 `;
 
 export const FormContainerStyled = styled.div`
@@ -36,5 +45,19 @@ export const FormContainerStyled = styled.div`
             color: #61dafb;
             text-shadow: 0 0 3px #00000015;
         }
+    }
+`;
+
+export const PStyled = styled.p`
+    position: absolute;
+    bottom: 20px;
+    color: #9b9b9b;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+        color: #61dafb;
+        text-shadow: 0 0 3px #00000015;
+        text-decoration: underline;
     }
 `;

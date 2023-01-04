@@ -11,7 +11,7 @@ export default function Form({ children, formName }) {
                     <span>{formName}</span>
                 </div>
             </FormContainerStyled>
-            {children}
+            <div>{children}</div>
         </FormStyled>
     );
 }

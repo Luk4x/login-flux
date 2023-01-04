@@ -2,7 +2,7 @@ import Button from '../../components/Button';
 import Form from '../../components/Form';
 import Input from '../../components/Input';
 
-import { PStyled } from './styles';
+import { PStyled } from '../../components/Form/styles';
 
 export default function Register() {
     return (
