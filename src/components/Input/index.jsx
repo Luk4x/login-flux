@@ -1,10 +1,10 @@
 import { InputContainerStyled, LabelStyled, InputStyled } from './styles';
 
-export default function Input({ name, id }) {
+export default function Input({ name, id, registerData, ...rest }) {
     return (
         <InputContainerStyled>
-            <InputStyled type="text" placeholder={name} id={id} />
-            <LabelStyled for={id}>{name}</LabelStyled>
+            <InputStyled placeholder={name} id={id} {...registerData} {...rest} />
+            <LabelStyled htmlFor={id}>{name}</LabelStyled>
         </InputContainerStyled>
     );
 }

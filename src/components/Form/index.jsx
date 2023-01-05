@@ -1,9 +1,9 @@
 import { FormStyled, FormContainerStyled } from './styles';
 import { SiInfluxdb } from 'react-icons/si';
 
-export default function Form({ children, formName }) {
+export default function Form({ children, formName, SubmitFunction }) {
     return (
-        <FormStyled>
+        <FormStyled onSubmit={SubmitFunction}>
             <FormContainerStyled>
                 <SiInfluxdb />
                 <div>

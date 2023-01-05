@@ -21,6 +21,10 @@ export const ButtonStyled = styled.button`
     gap: 5px;
     width: 100%;
 
+    span {
+        box-shadow: #11111122;
+    }
+
     &::before,
     &::after {
         content: '';
@@ -57,5 +61,26 @@ export const ButtonStyled = styled.button`
 
     &:active {
         filter: brightness(0.8);
+    }
+
+    &:disabled {
+        color: #9d9d9d;
+        opacity: 0.8;
+        pointer-events: none;
+        border-color: #9d9d9d;
+
+        svg {
+            animation: loading 2s cubic-bezier(0.45, 0, 0.55, 1) infinite alternate;
+
+            @keyframes loading {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(15px);
+                }
+            }
+        }
     }
 `;
