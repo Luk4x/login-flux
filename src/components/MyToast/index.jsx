@@ -1,6 +1,6 @@
 import { toast } from 'react-hot-toast';
 
-export default function MyToast(type, message, color) {
+export default function MyToast(type, message, color, time) {
     return toast[type](message, {
         position: 'top-right',
         style: {
@@ -10,6 +10,7 @@ export default function MyToast(type, message, color) {
         iconTheme: {
             primary: `${color}`,
             secondary: '#eee'
-        }
+        },
+        duration: time ? time : 2200
     });
 }

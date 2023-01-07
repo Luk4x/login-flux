@@ -3,6 +3,7 @@ import Button from '../../components/Button';
 
 import { AiOutlineUser } from 'react-icons/ai';
 import { SiInfluxdb } from 'react-icons/si';
+import MyToast from '../../components/MyToast';
 
 import { useAuth } from '../../Context/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -18,11 +19,18 @@ export default function Home() {
 
         try {
             await logOut();
-            navigate('/login');
+
+            MyToast('success', 'LogOut realizado com sucesso!', '#61dafb');
+
+            setTimeout(() => {
+                navigate('/login');
+            }, 1000);
         } catch (err) {
             console.error(err);
+            MyToast('error', 'Falha ao realizar o LogOut!', '#a00000');
         } finally {
             setLoading(false);
+            return;
         }
     }
 
