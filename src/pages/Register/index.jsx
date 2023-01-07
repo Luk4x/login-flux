@@ -16,16 +16,16 @@ const registerSchema = yup
     .object({
         email: yup
             .string()
-            .email('Digite um email válido!')
-            .required('Todos os campos são obrigatórios!'),
+            .required('Todos os campos são obrigatórios!')
+            .email('Digite um email válido!'),
         password: yup
             .string()
-            .min(6, 'A senha deve ter pelo menos 6 caracteres!')
-            .required('Todos os campos são obrigatórios!'),
+            .required('Todos os campos são obrigatórios!')
+            .min(6, 'A senha deve ter pelo menos 6 caracteres!'),
         passwordConfirmation: yup
             .string()
-            .oneOf([yup.ref('password')], 'As senhas devem ser iguais!')
             .required('Todos os campos são obrigatórios!')
+            .oneOf([yup.ref('password')], 'As senhas devem ser iguais!')
     })
     .required('Todos os campos são obrigatórios!');
 
@@ -51,14 +51,14 @@ export default function Register() {
 
             setTimeout(() => {
                 navigate('/');
-            }, 500);
+            }, 1000);
         } catch (err) {
             console.error(err);
+
             const errMessage =
                 err.code === 'auth/email-already-in-use'
                     ? 'Esse email já está cadastrado!'
                     : 'Falha ao criar a conta!';
-
             MyToast('error', errMessage, '#a00000');
         } finally {
             setLoading(false);
@@ -67,7 +67,7 @@ export default function Register() {
     }
 
     useEffect(() => {
-        const errMessage = Object.entries(errors)?.[0]?.[1]?.message;
+        const errMessage = Object.entries(errors)[0]?.[1]?.message;
         if (errMessage) MyToast('error', errMessage, '#a00000');
     }, [errors]);
 
