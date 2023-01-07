@@ -11,8 +11,28 @@ export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState();
     const [loading, setLoading] = useState(true);
 
-    function firebaseSignUp(email, password) {
+    function signUp(email, password) {
         return auth.createUserWithEmailAndPassword(email, password);
+    }
+
+    function logIn(email, password) {
+        return auth.signInWithEmailAndPassword(email, password);
+    }
+
+    function logOut() {
+        return auth.signOut();
+    }
+
+    function resetPassword(email) {
+        return auth.sendPasswordResetEmail(email);
+    }
+
+    function updateEmail(email) {
+        return currentUser.updateEmail(email);
+    }
+
+    function updatePassword(password) {
+        return currentUser.updatePassword(password);
     }
 
     useEffect(() => {
@@ -26,7 +46,12 @@ export function AuthProvider({ children }) {
 
     const userData = {
         currentUser,
-        firebaseSignUp
+        signUp,
+        logIn,
+        logOut,
+        resetPassword,
+        updateEmail,
+        updatePassword
     };
 
     return (

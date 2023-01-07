@@ -8,21 +8,21 @@ import { useForm } from 'react-hook-form';
 import { useAuth } from '../../Context/AuthContext';
 import { Link, useNavigate } from 'react-router-dom';
 
-export default function Register() {
+export default function Login() {
     const {
         register,
         handleSubmit,
         formState: { errors }
     } = useForm();
-    const { signUp } = useAuth();
+    const { logIn } = useAuth();
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    async function handleSignUp(formData) {
+    async function handleLogIn(formData) {
         setLoading(true);
 
         try {
-            await signUp(formData.email, formData.password);
+            await logIn(formData.email, formData.password);
             navigate('/');
         } catch (err) {
             console.error(err);
@@ -32,7 +32,10 @@ export default function Register() {
     }
 
     return (
-        <Form submitFunction={handleSubmit(handleSignUp)} formName="SignUp">
+        <Form submitFunction={handleSubmit(handleLogIn)} formName="LogIn">
+            <PStyled top>
+                <Link to="/forgot-password">Esqueceu a senha?</Link>
+            </PStyled>
             <Input
                 name="Email"
                 id="email"
@@ -45,15 +48,9 @@ export default function Register() {
                 registerData={register('password', { required: true })}
                 type="password"
             />
-            <Input
-                name="Confirmar Senha"
-                id="passwordConfirmation"
-                registerData={register('passwordConfirmation', { required: true })}
-                type="password"
-            />
-            <Button title="Registrar" type="submit" disabled={loading} />
+            <Button title="LogIn" type="submit" disabled={loading} />
             <PStyled>
-                Já tem uma conta? Faça <Link to="/login">LogIn</Link>.
+                Precisa de uma conta? <Link to="/register">Registre-se</Link>.
             </PStyled>
         </Form>
     );

@@ -50,14 +50,21 @@ export const FormContainerStyled = styled.div`
 
 export const PStyled = styled.p`
     position: absolute;
-    bottom: 20px;
+    text-align: center;
     color: #9b9b9b;
     left: 50%;
     transform: translateX(-50%);
+    ${props => (props.top ? 'top: 25px;' : 'bottom: 25px;')}
 
     a {
         color: #61dafb;
         text-shadow: 0 0 3px #00000015;
+        transition: all 0.15s ease-in-out;
         text-decoration: underline;
+
+        &:hover {
+            color: #116399;
+            text-shadow: none;
+        }
     }
 `;
