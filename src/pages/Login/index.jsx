@@ -73,7 +73,6 @@ export default function Login() {
     }
 
     useEffect(() => {
-        Object.entries(errors);
         const errMessage = Object.entries(errors)[0]?.[1]?.message;
         if (errMessage) MyToast('error', errMessage, '#a00000');
     }, [errors]);
