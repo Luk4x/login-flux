@@ -78,9 +78,8 @@ The application has a total of 5 page components, namely:
   
 ## 📖 Cloning the Project
 
-To clone and run this project on your computer you will need [Git](https://git-scm.com/), [Node.js v18.12.1](https://nodejs.org/en/) or higher and [Yarn](https://yarnpkg.com/) previously installed.<br>
-You'll also need the project's API running, so before continuing here, go to [API Repository](https://github.com/Luk4x/iManager-json-server) and go through the steps on how to clone and run it first!<br>
-After these two steps, in the terminal:
+To clone and run this project on your computer you will need [Git](https://git-scm.com/) and [Node.js v18.12.1](https://nodejs.org/en/) or higher and previously installed.<br>
+After that, in the terminal:
 
 ```bash
 # Clone this repository with:
