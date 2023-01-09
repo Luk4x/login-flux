@@ -37,9 +37,14 @@
 ## 🚀 Tecnologias Utilizadas
 
 - [ReactJS](https://pt-br.reactjs.org)
+- [Firebase](https://firebase.google.com/)
+- [React Hook Form](https://react-hook-form.com/get-started/)
+- [Yup](https://github.com/jquense/yup)
+- [Styled Components](https://styled-components.com/docs)
+- [React Hot Toast](https://react-hot-toast.com/)
 - [React Router v6](https://reactrouter.com/en/main)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [ViteJS](https://vitejs.dev/)
+- [Vite + SWC](https://vitejs.dev/)
 - [NodeJS](https://nodejs.org)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
