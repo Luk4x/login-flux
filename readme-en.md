@@ -33,7 +33,7 @@
 </div>
 
 > **If the video has any errors, reload the page!**<br>
-> Access the project online **[HERE](https://luk4x-imanager.netlify.app/)**
+> Access the project online **[HERE](https://luk4x-login-flux.netlify.app/)**
 
 ## 🚀 Technologies Used
 
