@@ -54,8 +54,8 @@
 
 > Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
 
-Inspirado no [RocketPay](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate), o GenCard simula um formulário de preenchimento de cartão de crédito, onde o foco foi praticar a manipulação de elementos HTML via DOM e utilizar o `IMask` para a validação das informações.<br>
-Visto que já tinha esses conhecimentos, aproveitei a oportunidade para dar margem às minhas ideias e explorar mais sobre Regex e Sass, assim desenvolvendo diversas modificações e melhorias, como a criação de validações extras, o desenvolvimento de um CSS mais rebuscado e performático, entre outras citadas na sessão de destaques.<br> 
+A aplicação se consiste num fluxo de autenticação completo, onde é possível criar uma conta, fazer LogIn e LogOut, atualizar os dados da conta, e redefinir a senha em caso de esquecimento, isso utilizando Firebase para armazenar os dados dos usuários e realizar todo o sistema de autenticação, e React para a interface.<br>
+A aplicação conta com as validações necessárias para que todos os erros sejam tratados, assim como mensagens de feedback para criar uma melhor experiência para o usuário, além de outras boas práticas relevantes para esse contexto de autenticação.<br>
 
 ### 📌 Alguns Destaques
 
