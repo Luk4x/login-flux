@@ -68,15 +68,15 @@ Visto que já tinha esses conhecimentos, aproveitei a oportunidade para dar marg
 
 ## 📖 Clonando o Projeto
 
-Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/) e [Node.js v16.13.2](https://nodejs.org/en/) ou superior previamente instalados.<br>
+Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/) e [Node.js v18.12.1](https://nodejs.org/en/) ou superior previamente instalados.<br>
 Feito isso, no terminal:
 
 ```bash
 # Clone esse repositório com:
-> git clone https://github.com/Luk4x/gencard.git
+> git clone https://github.com/Luk4x/login-flux.git
 
 # Entre no repositório com:
-> cd gencard
+> cd login-flux
 
 # Instale as dependências com:
 > npm install
