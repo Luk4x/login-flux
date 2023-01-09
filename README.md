@@ -33,7 +33,7 @@
 </div>
 
 > **Caso o vídeo apresente algum erro, recarregue a página!**<br>
-> Acesse o projeto online **[AQUI](https://luk4x-gencard.netlify.app/)**
+> Acesse o projeto online **[AQUI](https://luk4x-login-flux.netlify.app/)**
 
 ## 🚀 Tecnologias Utilizadas
 
