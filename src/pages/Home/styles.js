@@ -33,8 +33,11 @@ export const MainStyled = styled.main`
     padding: 30px 15px;
     width: 100%;
     max-width: 600px;
-    border-radius: 10px;
+    border-radius: 8px;
     position: relative;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 
     div {
         position: absolute;

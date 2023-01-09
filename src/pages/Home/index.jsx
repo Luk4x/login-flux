@@ -1,8 +1,8 @@
 import { MainStyled, HeaderStyled, SectionStyled } from './styles';
+import { LogoAnimation } from '../../components/Form/styles';
 import Button from '../../components/Button';
 
 import { AiOutlineUser } from 'react-icons/ai';
-import { SiInfluxdb } from 'react-icons/si';
 import MyToast from '../../components/MyToast';
 
 import { useAuth } from '../../Context/AuthContext';
@@ -37,7 +37,7 @@ export default function Home() {
     return (
         <MainStyled>
             <div>
-                <SiInfluxdb />
+                <LogoAnimation />
                 <span>Home</span>
             </div>
             <HeaderStyled>

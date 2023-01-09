@@ -1,11 +1,10 @@
-import { FormStyled, FormContainerStyled } from './styles';
-import { SiInfluxdb } from 'react-icons/si';
+import { FormStyled, FormContainerStyled, LogoAnimation } from './styles';
 
 export default function Form({ children, formName, submitFunction }) {
     return (
         <FormStyled onSubmit={submitFunction}>
             <FormContainerStyled>
-                <SiInfluxdb />
+                <LogoAnimation />
                 <div>
                     <span>Flux</span>
                     <span>{formName}</span>

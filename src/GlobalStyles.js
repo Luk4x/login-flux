@@ -27,6 +27,6 @@ export default createGlobalStyle`
         min-width: 100vw;
         display: flex;
         place-items: center;
-        background: #eee;
+        background: linear-gradient(45deg, #eee 51%, #666 49%);
     }
 `;
